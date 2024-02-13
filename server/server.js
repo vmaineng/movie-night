@@ -7,7 +7,7 @@ require("dotenv").config();
 
 //routes
 // const habitRoutes = require("./routes/habits");
-// const userRoutes = require("./routes/users");
+const userRoutes = require("./routes/users");
 
 //start the server
 const app = express();
@@ -23,7 +23,7 @@ app.use((req, res, next) => {
 
 //setting up routes to habits and users
 // app.use("/api/habits", habitRoutes);
-// app.use("/api/users", userRoutes);
+app.use("/api/users", userRoutes);
 
 // connect to DB && async
 mongoose.set("strictQuery", false);
