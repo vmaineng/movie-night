@@ -6,7 +6,7 @@ const cors = require("cors");
 require("dotenv").config();
 
 //routes
-// const habitRoutes = require("./routes/habits");
+const movieRoutes = require("./routes/movies");
 const userRoutes = require("./routes/users");
 
 //start the server
@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 });
 
 //setting up routes to habits and users
-// app.use("/api/habits", habitRoutes);
+app.use("/api/movies", movieRoutes);
 app.use("/api/users", userRoutes);
 
 // connect to DB && async

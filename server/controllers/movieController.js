@@ -20,7 +20,7 @@ const getMovie = async (req, res) => {
 };
 
 const createMovie = async (req, res, next) => {
-  const { title, description, category } = req.body;
+  const { title, description } = req.body;
   try {
     const movie = await Movie.create({ title, description, category });
     res.status(200).json(movie);
