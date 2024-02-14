@@ -22,7 +22,7 @@ const getMovie = async (req, res) => {
 const createMovie = async (req, res, next) => {
   const { title, description } = req.body;
   try {
-    const movie = await Movie.create({ title, description, category });
+    const movie = await Movie.create({ title, description });
     res.status(200).json(movie);
   } catch (error) {
     res.status(400).json({ error: error.message });

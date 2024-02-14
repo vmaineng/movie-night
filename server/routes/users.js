@@ -25,6 +25,6 @@ router.post("/login", login)
 
 //logout
 router.route("/logout")
-      .get(protectedRoute, logout)
+      // .get(protectedRoute, logout)
 
 module.exports = router;
