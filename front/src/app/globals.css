@@ -57,6 +57,12 @@ body {
   font-weight: bold;
 }
 
+.links{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

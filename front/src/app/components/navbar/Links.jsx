@@ -17,10 +17,12 @@ const Links = () => {
     const [open, setOpen] = useState(false);
 
   return (
-    <div>
+    <div className="nav-container">
+        <div className="links">
         {links.map((link) => {
-            <NavLink key={link.title} link={link}/>
+            <NavLink key={link.title} item={link}/>
         })}
+        </div>
     </div>
   )
 }
