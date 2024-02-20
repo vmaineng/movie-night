@@ -25,11 +25,9 @@ const Links = () => {
 
   return (
     <div className={styles.links}>
-      {links.map((link => (
-        <Link key={link.title} href={link.path}>
-          {link.title}
-          </Link>
-      )))}
+      {links.map((link) => (
+          <NavLink link={link} key={link.title} />
+        ))}
     </div>
   );
 };
