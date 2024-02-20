@@ -4,14 +4,23 @@ import NavLink from './NavLink';
 
 const links= [
     {
-        title: "Home",
+        title: "Homepage",
         path: "/",
-    },
-    {
-        title: "TV Shows",
-        path: "/tvshows",
-    }
-]
+      },
+      {
+        title: "About",
+        path: "/about",
+      },
+      {
+        title: "Contact",
+        path: "/contact",
+      },
+      {
+        title: "Blog",
+        path: "/blog",
+      },
+    ];
+    
 
 const Links = () => {
     const [open, setOpen] = useState(false);
@@ -20,7 +29,7 @@ const Links = () => {
     <div className="nav-container">
         <div className="links">
         {links.map((link) => {
-            <NavLink key={link.title} item={link}/>
+            <NavLink key={link.title} link={link}/>
         })}
         </div>
     </div>
