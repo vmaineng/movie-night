@@ -27,6 +27,7 @@ const Links = () => {
 
   return (
     //if a user already, can watch else need to login
+    <div className={styles.container}>
     <div className={styles.links}>
       {links.map((link) => (
         <NavLink link={link} key={link.title} />
@@ -35,11 +36,20 @@ const Links = () => {
       {session ? (
         <>
           {isUser}
-          <button>Logout</button>
+          <button className={styles.logout}>Logout</button>
         </>
       ) : (
         <NavLink link={{ title: "Login", path: "/login" }} />
       )}
+    </div>
+    <button>Menu</button>
+    {
+      open && (<div className={styles.mobileLinks}> 
+      {links.map((link) => (
+        <NavLink link={link} key={link.title} />
+      ))}
+      </div>
+    )}
     </div>
   );
 };
