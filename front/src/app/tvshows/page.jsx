@@ -1,8 +1,13 @@
 import React from 'react'
+import Image from 'next/image'
+import styles from "./tvshows.module.css"
 
 const TvshowPage = () => {
   return (
-    <div>TvshowPage</div>
+    <div className={styles.showContainer}>
+      TvshowPage
+      <Image src="/about.png" alt="" fill />
+      </div>
   )
 }
 

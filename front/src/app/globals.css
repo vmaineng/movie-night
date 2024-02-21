@@ -37,6 +37,7 @@ a {
   justify-content: space-between;
 }
 
+/* CSS break points for specific screens */
 @media (max-width: 1536px) {
   .container {
     width: 1366px;
