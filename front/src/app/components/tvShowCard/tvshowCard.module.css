@@ -29,9 +29,13 @@
     margin-bottom: 20px;
 }
 
-.desc{
+.description{
     width: 90%;
     margin-bottom: 20px;
     font-weight: 300;
     color:purple;
+}
+
+.link {
+    text-decoration: underline;
 }
