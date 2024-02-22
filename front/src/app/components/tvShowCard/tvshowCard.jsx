@@ -8,7 +8,7 @@ const tvshowCard = () => {
     <div className={styles.container}>
       <div className={styles.top}>
         <div className={styles.imgContainer}>
-          <Image src="/tvshow.png" alt="tvshow" fill className={styles.img} />
+          <Image src="/about.png" alt="tvshow" fill className={styles.img} />
         </div>
         <span className={styles.date}> date 1.1.24</span>
       </div>
