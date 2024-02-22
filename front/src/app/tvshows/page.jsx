@@ -1,17 +1,19 @@
-import React from 'react'
-import Image from 'next/image'
-import styles from "./tvshows.module.css"
-import tvshowCard from '../components/tvShowCard/tvshowCard'
+import React from "react";
+import Image from "next/image";
+import styles from "./tvshows.module.css";
+import TvshowCard from "../components/tvShowCard/TvshowCard";
 
 const TvshowPage = () => {
   return (
     <div className={styles.showContainer}>
-      TvshowPage
-     <div className={styles.post}>
-      <tvshowCard />
-       </div>
+      <div className={styles.post}>
+        <TvshowCard />
       </div>
-  )
-}
+      <div className={styles.post}>
+        <TvshowCard />
+      </div>
+    </div>
+  );
+};
 
-export default TvshowPage
+export default TvshowPage;

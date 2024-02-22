@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./tvshowCard.module.css";
 import Link from "next/link";
 
-const tvshowCard = () => {
+const TvshowCard = () => {
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -21,4 +21,4 @@ const tvshowCard = () => {
   );
 };
 
-export default tvshowCard;
+export default TvshowCard;
