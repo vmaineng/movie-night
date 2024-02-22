@@ -6,7 +6,7 @@ const Footer = () => {
     <div className={styles.container}>
     <div className={styles.logo}> Logo</div>
     <div className={styles.text}>
-    Lama creative thoughts &copy;{new Date().getFullYear()}. All rights reserved
+    Fri-Yay &copy;{new Date().getFullYear()}. All rights reserved
     </div>
       </div>
   )

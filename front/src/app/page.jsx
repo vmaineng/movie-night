@@ -1,13 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./home.module.css";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 
 const Home = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
         <h1 className={styles.title}> Happiness</h1>
-        <p className = {styles.desc}> Lorem ipsum</p>
+        <p className={styles.desc}> Lorem ipsum</p>
         <div className={styles.buttons}>
           <button>Learn more</button>
         </div>
@@ -16,6 +18,7 @@ const Home = () => {
         <Image src="/hero.png" alt="hero" fill className={styles.heroImg} />
       </div>
     </div>
+    
   );
 };
 
